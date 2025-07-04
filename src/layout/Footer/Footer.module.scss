@@ -1,0 +1,72 @@
+@use "../../styles/variables" as *;
+
+.footerSection {
+  background-color: $secondary;
+  color: #e8f4ff;
+  padding: 2rem 0;
+  position: relative;
+  z-index: 1;
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    content: "";
+    background-image: url("../../assets/images/Vector_palms.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0.02;
+  }
+  h6 {
+    margin-bottom: 2.5rem;
+  }
+  a {
+    color: $white;
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+  .headerLogo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    h5 {
+      margin: 0;
+      padding-left: 5px;
+    }
+  }
+  .socialShare {
+    a {
+      color: $white;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      transition: color 0.3s ease;
+      &:hover {
+        color: $white;
+      }
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+  .contactInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    svg {
+      margin-right: 0.5rem;
+    }
+    a {
+      color: $white;
+      text-decoration: none;
+      &:hover {
+        color: $primary;
+        text-decoration: underline;
+      }
+    }
+  }
+}

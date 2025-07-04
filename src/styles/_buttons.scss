@@ -1,0 +1,44 @@
+@use "variables" as *;
+
+.button {
+  display: inline-block;
+  padding: 0.95rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &--primary {
+    background-color: $primary;
+    color: #fff;
+    border: none;
+
+    &:hover {
+      background-color: $secondary;
+      color: $white;
+    }
+  }
+
+  &--secondary {
+    background-color: $secondary;
+    color: $white;
+    border: none;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    border: 2px solid $primary;
+    color: $primary;
+
+    &:hover {
+      background-color: $primary;
+      color: #fff;
+    }
+  }
+}

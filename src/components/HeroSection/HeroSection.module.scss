@@ -1,0 +1,36 @@
+@use "../../styles/variables" as *;
+
+.heroSection {
+  padding: 4rem 0;
+  .heroText {
+    padding: 81px 0;
+    p {
+      color: $secondary-text;
+    }
+    .cardsContainer {
+      margin-top: 2.5rem;
+    }
+    .card {
+      border: 1px solid #dee2ea;
+      border-radius: 8px;
+      padding: 30px 15px 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      img {
+        width: 48px;
+        height: 60px;
+      }
+      h6 {
+        margin: 1.7rem 0 0;
+        font-size: 1rem;
+      }
+      &:hover {
+        border-color: $primary;
+        box-shadow: 0 4px 20px rgba(125, 71, 239, 0.1);
+      }
+    }
+    .card:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
