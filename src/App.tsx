@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { HeroSection } from "./components/HeroSection/HeroSection";
+import { OurServices } from "./components/OurServices/OurServices";
+import { ContactUs } from "./components/ContactUs/ContactUs";
+
 import { Suspense } from "react";
 import { Layout } from "./layout";
 
@@ -14,6 +17,8 @@ const App = () => {
             element={
               <Layout>
                 <HeroSection />
+                <OurServices />
+                <ContactUs />
               </Layout>
             }
           />

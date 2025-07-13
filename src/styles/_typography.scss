@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   font-size: 16px;
   color: $text;
   background-color: $white;
@@ -44,7 +44,11 @@ h5 {
 }
 h6 {
   font-size: 1.25rem;
-  // font-weight: 600;
+  font-weight: 500;
+}
+h6.bold {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 p {
@@ -63,4 +67,100 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+button {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  &:focus {
+    outline: none;
+  }
+}
+
+//form styles
+input,
+textarea,
+select,
+button,
+label,
+.MuiFormControlLabel-label {
+  font-family: "Poppins", sans-serif !important;
+  color: $text !important;
+}
+input,
+textarea,
+select {
+  &:focus {
+    border-color: $primary;
+  }
+
+  &::placeholder {
+    color: #6b7280;
+  }
+}
+label {
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: $text;
+}
+
+input[type="checkbox"],
+.MuiButtonBase-root.MuiCheckbox-root.Mui-checked {
+  color: $primary;
+}
+.MuiButtonBase-root.MuiCheckbox-root {
+  padding: 3px !important;
+}
+.MuiFormControlLabel-root {
+  margin-left: -7px !important;
+}
+
+// Override default styles for accordion
+.MuiPaper-root {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  &::before {
+    content: none !important;
+  }
+}
+.MuiAccordion-root {
+  border-top: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+.MuiAccordion-root.Mui-expanded {
+  margin-top: 0 !important;
+}
+.MuiPaper-root.Mui-expanded::before {
+  opacity: unset !important;
+  position: unset !important;
+  content: unset !important;
+}
+.MuiAccordionSummary-root {
+  padding: 0 !important;
+}
+
+.MuiAccordionDetails-root {
+  padding-left: unset !important;
+  padding-right: unset !important;
+  padding-bottom: unset !important;
+}
+
+.MuiAccordionSummary-root h6 {
+  margin-bottom: 0 !important;
+  padding-right: 1rem !important;
+}
+
+.MuiAccordionSummary-content {
+  margin: 1rem 0 !important;
+}
+.MuiAccordionSummary-content.Mui-expanded {
+  margin: 1rem 0 0.5rem !important;
+}
+
+.MuiAccordionDetails-root p {
+  margin-bottom: 0 !important;
+}
+.MuiAccordionSummary-root .MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  transform: rotate(44deg) !important;
 }

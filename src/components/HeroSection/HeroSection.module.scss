@@ -3,7 +3,6 @@
 .heroSection {
   padding: 4rem 0;
   .heroText {
-    padding: 81px 0;
     p {
       color: $secondary-text;
     }
@@ -16,6 +15,7 @@
       padding: 30px 15px 20px;
       text-align: center;
       transition: all 0.3s ease;
+      margin-bottom: 2rem;
       img {
         width: 48px;
         height: 60px;
@@ -23,6 +23,7 @@
       h6 {
         margin: 1.7rem 0 0;
         font-size: 1rem;
+        font-weight: 600;
       }
       &:hover {
         border-color: $primary;

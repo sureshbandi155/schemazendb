@@ -1,0 +1,20 @@
+.contactSection {
+  padding: 4rem 0;
+  background: url("../../assets/images/Form_BG.png") no-repeat center
+    center/cover;
+  .leftCol {
+    background-color: #fff;
+    border: 2px solid rgb(222, 226, 234);
+    border-radius: 24px;
+    padding: 50px 64px 60px;
+    .serviceLabel {
+      margin: 1rem 0;
+    }
+  }
+  .rightCol {
+    padding-left: 4.5rem;
+    .textContainer {
+      padding-bottom: 3rem;
+    }
+  }
+}
