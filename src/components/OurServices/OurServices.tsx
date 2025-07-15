@@ -17,7 +17,11 @@ export const OurServices = () => {
         <h6 className={styles.subTitle}>
           Our Database Development and Support Services:
         </h6>
-        <Grid container className={styles.twoColGrid} spacing={13}>
+        <Grid
+          container
+          className={styles.twoColGrid}
+          spacing={{ xs: 6, md: 13, lg: 13 }}
+        >
           <Service
             title="MongoDB Administration"
             icon={MongoDB}

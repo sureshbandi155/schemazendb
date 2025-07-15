@@ -11,6 +11,12 @@ body {
   font-weight: 400;
 }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 h1,
 h2,
 h3,
@@ -163,4 +169,98 @@ input[type="checkbox"],
 }
 .MuiAccordionSummary-root .MuiAccordionSummary-expandIconWrapper.Mui-expanded {
   transform: rotate(44deg) !important;
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  h6,
+  h6.bold {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+  .wrapper {
+    padding: 0 40px;
+  }
+  label {
+    font-size: 0.95rem;
+  }
+  input,
+  textarea,
+  select {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .MuiFormControlLabel-root {
+    margin-left: -5px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  h6,
+  h6.bold {
+    font-size: 1rem;
+  }
+  .wrapper {
+    padding: 0 15px;
+  }
+  body {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+  input,
+  textarea,
+  select {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .MuiFormControlLabel-root {
+    flex-wrap: wrap;
+    margin-left: 0 !important;
+  }
 }

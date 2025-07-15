@@ -30,8 +30,55 @@
         box-shadow: 0 4px 20px rgba(125, 71, 239, 0.1);
       }
     }
+  }
+}
+@media (min-width: 992px) {
+  .heroSection {
     .card:not(:last-child) {
       margin-right: 1rem;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .heroSection {
+    padding: 2rem 0;
+    .heroText {
+      .cardsContainer {
+        margin-top: 1.5rem;
+      }
+      .card {
+        padding: 20px 10px 15px;
+        img {
+          width: 40px;
+          height: 50px;
+        }
+        h6 {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 1rem 0;
+    .heroText {
+      .cardsContainer {
+        margin-top: 1rem;
+      }
+      .card {
+        padding: 15px 5px 10px;
+        img {
+          width: 32px;
+          height: 40px;
+        }
+        h6 {
+          font-size: 0.85rem;
+        }
+      }
+    }
+    .heroImage {
+      display: none;
     }
   }
 }

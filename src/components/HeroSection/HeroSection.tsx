@@ -37,10 +37,6 @@ export const HeroSection = () => {
                     <img src={PostGre} alt="PostgreSQL" />
                     <h6>PostgreSQL </h6>
                   </Grid>
-                  {/* <Grid size={{ xs: 12, md: 3 }} className={styles.card}>
-                    <img src={PostGre} alt="PostgreSQL" />
-                    <h6>SQL Server Support</h6>
-                  </Grid> */}
                 </Grid>
               </div>
             </div>
@@ -52,10 +48,7 @@ export const HeroSection = () => {
             style={{
               background: `url(${HeroImage}) no-repeat center center / cover`,
             }}
-          >
-            <div></div>
-            {/* <img src={HeroImage} alt="Hero Illustration" /> */}
-          </Grid>
+          ></Grid>
         </Grid>
       </div>
     </div>

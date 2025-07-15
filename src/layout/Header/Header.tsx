@@ -13,7 +13,9 @@ export const Header = () => {
             <Grid size={4}>
               <div className={styles.headerLogo}>
                 <img src={DataBaseIcon} alt="Database Icon" />
-                <h5>SchemaZenDB</h5>
+                <h5>
+                  <Link to="/schemazendb">SchemaZenDB</Link>
+                </h5>
               </div>
             </Grid>
             <Grid size={8} className={styles.headerActions}>

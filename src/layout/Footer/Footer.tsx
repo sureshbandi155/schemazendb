@@ -17,7 +17,9 @@ export const Footer = () => {
           <Grid size={{ xs: 12, md: 4 }}>
             <div className={styles.headerLogo}>
               <img src={DataBaseIcon} alt="Database Icon" />
-              <h5>SchemaZenDB</h5>
+              <h5>
+                <Link to="/schemazendb">SchemaZenDB</Link>
+              </h5>
             </div>
             <div className={styles.socialShare}>
               <p>Follow us on social media:</p>
@@ -34,7 +36,7 @@ export const Footer = () => {
             <h6>Company</h6>
             <Link to="/contact">Contact Us</Link>
           </Grid>
-          <Grid size={{ xs: 12, md: 4 }}>
+          <Grid size={{ xs: 12, md: 4 }} className={styles.getInTouch}>
             <h6>Get in Touch</h6>
             <div className={styles.contactInfo}>
               <EmailIcon />
@@ -58,6 +60,11 @@ export const Footer = () => {
             </div>
           </Grid>
         </Grid>
+        <div className={styles.footerBottom}>
+          <p>
+            &copy; {new Date().getFullYear()} SchemaZenDB. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );

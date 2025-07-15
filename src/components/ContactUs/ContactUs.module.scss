@@ -10,11 +10,54 @@
     .serviceLabel {
       margin: 1rem 0;
     }
+    button {
+      margin-top: 1rem;
+    }
   }
   .rightCol {
-    padding-left: 4.5rem;
     .textContainer {
       padding-bottom: 3rem;
+    }
+  }
+}
+@media (min-width: 1025px) {
+  .contactSection {
+    .rightCol {
+      padding-left: 4.5rem;
+    }
+  }
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+  .contactSection {
+    .leftCol {
+      padding: 40px 32px;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .contactSection {
+    .leftCol {
+      padding: 40px 32px;
+    }
+    .rightCol {
+      padding-left: 3rem;
+      .textContainer {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}
+@media (max-width: 899px) {
+  .contactSection {
+    padding: 4rem 0 2rem;
+    .leftCol {
+      padding: 30px 24px;
+    }
+    .rightCol {
+      .textContainer {
+        padding-bottom: 1.5rem;
+      }
     }
   }
 }

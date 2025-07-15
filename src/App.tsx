@@ -22,6 +22,14 @@ const App = () => {
               </Layout>
             }
           />
+          <Route
+            path="/contact"
+            element={
+              <Layout>
+                <ContactUs />
+              </Layout>
+            }
+          />
         </Routes>
       </Suspense>
     </Router>

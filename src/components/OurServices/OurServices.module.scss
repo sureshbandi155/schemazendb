@@ -1,7 +1,5 @@
 .servicesSection {
   padding: 4rem 0;
-  //   background: url("../../assets/images/What_We_Do_Bg.svg") no-repeat center
-  // center/cover;
   .subTitle {
     font-weight: 500;
     padding-bottom: 1rem;
@@ -19,5 +17,16 @@
   .buttonContainer {
     border-top: 1px solid rgba(0, 0, 0, 0.12);
     padding-top: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .servicesSection {
+    padding: 2rem 0;
+  }
+}
+@media (max-width: 899px) {
+  .servicesSection {
+    padding: 4rem 0 4.5rem;
   }
 }

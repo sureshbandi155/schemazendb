@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import {
   Grid,
   TextField,
@@ -28,6 +30,7 @@ const schema = yup.object({
 });
 
 export const ContactUs = () => {
+  const { pathname } = useLocation();
   const {
     control,
     handleSubmit,
@@ -59,6 +62,14 @@ export const ContactUs = () => {
       borderColor: "#7d47ef" + "!important",
     },
   };
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth", // Optional: you can use "auto" for instant jump
+    });
+  }, [pathname]);
 
   return (
     <section className={styles.contactSection}>

@@ -3,7 +3,7 @@
 .footerSection {
   background-color: $secondary;
   color: #e8f4ff;
-  padding: 2rem 0;
+  padding: 3rem 0 1.2rem;
   position: relative;
   z-index: 1;
   &::after {
@@ -37,6 +37,10 @@
     h5 {
       margin: 0;
       padding-left: 5px;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
   .socialShare {
@@ -67,6 +71,35 @@
         color: $primary;
         text-decoration: underline;
       }
+    }
+  }
+  .footerBottom {
+    padding-top: 1rem;
+    border-top: 1px solid #74747440;
+    margin-top: 3rem;
+    text-align: center;
+    p {
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 899px) {
+  .footerSection {
+    padding: 3rem 0 1.2rem;
+    .headerLogo {
+      margin-bottom: 1.5rem;
+    }
+    .socialShare {
+      margin-bottom: 1rem;
+    }
+    h6 {
+      margin-bottom: 1.5rem;
+    }
+    .getInTouch {
+      margin-top: 1.5rem;
+    }
+    .footerBottom {
+      margin-top: 1.8rem;
     }
   }
 }
